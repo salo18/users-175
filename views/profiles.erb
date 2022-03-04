@@ -1,0 +1,10 @@
+<h1>User Profile</h1>
+<h2>Name: <%= @name %> </h2>
+<h2>Email: <%= @email %> </h2>
+<h2>Interests: <%= @interests %></h2>
+<h3>Other Users</h3>
+<ul>
+  <% @others.each do |u| %>
+    <li><a href="/users/<%= u %>"><%= u %></a></li>
+  <% end %>
+<ul>
